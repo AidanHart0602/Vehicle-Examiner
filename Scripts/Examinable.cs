@@ -1,39 +1,33 @@
 using UnityEngine;
 
 public class Examinable : MonoBehaviour
-{
-
+{ 
     [SerializeField]
-    private ExaminerManager ExaminerManager;
+    private ExaminerManager examinerManager;
+    [SerializeField]
+    public float primaryScaleOffset = 1f;
+
     // Start is called before the first frame update
+
     [System.Obsolete]
     void Start()
     {
-        ExaminerManager = FindObjectOfType<ExaminerManager>();
+        examinerManager = FindObjectOfType<ExaminerManager>();
     }
 
-    // Update is called once per frame
+    // Update is called once per frames
     void Update()
     {
 
     }
     public void CallManager()
     {
-        ExaminerManager.InvokeManager(this);
+        examinerManager.InvokeManager(this);
         print("Activating examiner");
     }
-
     public void StopManager()
     {
-        ExaminerManager.TurnOffManager();
+        examinerManager.TurnOffManager();
         print("Turning the examiner off");
-    }
-
-    void checkVisualization()
-    {
-        if (visualizeSelection == true)
-        {
-
-        }
     }
 }
