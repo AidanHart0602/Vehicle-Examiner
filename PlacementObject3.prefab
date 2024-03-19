@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6630999178991379080}
   - component: {fileID: 3286644472723146046}
   - component: {fileID: 1050309235602768137}
+  - component: {fileID: -8096228063081872700}
   m_Layer: 0
   m_Name: PlacementObject3
   m_TagString: Untagged
@@ -472,6 +473,20 @@ MonoBehaviour:
   m_FallbackLayerMask:
     serializedVersion: 2
     m_Bits: 0
+--- !u!114 &-8096228063081872700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3755139596740005189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474b4817d58bf0c459c008f0ac2a2d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  examinerManager: {fileID: 0}
+  primaryScaleOffset: 1
 --- !u!1 &6936689422188775104
 GameObject:
   m_ObjectHideFlags: 0

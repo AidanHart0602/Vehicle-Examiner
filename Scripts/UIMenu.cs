@@ -27,4 +27,9 @@ public class UIMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Driveway Mode");
     }
+
+    public void LoadExaminerMode() 
+    {
+        SceneManager.LoadScene("Examiner Mode");
+    }
 }
