@@ -28,8 +28,13 @@ public class UIMenu : MonoBehaviour
         SceneManager.LoadScene("Driveway Mode");
     }
 
-    public void LoadExaminerMode() 
+    public void DestroyModels() 
     {
-        SceneManager.LoadScene("Examiner Mode");
+        GameObject[] PrefabsList = GameObject.FindGameObjectsWithTag("Prefab");
+
+        foreach(GameObject Prefab in PrefabsList)
+        {
+            Destroy(Prefab);
+        }
     }
 }

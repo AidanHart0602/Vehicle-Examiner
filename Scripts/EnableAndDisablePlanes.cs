@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using TMPro;
+
+
 [RequireComponent(typeof(ARPlaneManager))]
 public class EnableAndDisablePlanes : MonoBehaviour
 {
@@ -39,7 +42,6 @@ public class EnableAndDisablePlanes : MonoBehaviour
 
     private void AllPlanesActive(bool toggle)
     {
-        
         foreach(var plane in planeManager.trackables)
         {
             plane.gameObject.SetActive(toggle);
