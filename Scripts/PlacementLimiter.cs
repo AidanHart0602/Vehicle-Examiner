@@ -5,20 +5,58 @@ using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
 public class PlacementLimiter : MonoBehaviour
-{
-    private int PlacedObjects;
-    // Start is called before the first frame update
-    void Start()
+{ 
+    public GameObject placementButtonA;
+    public GameObject placementButtonB;
+    public GameObject placementButtonC;
+
+    [SerializeField]
+    private bool prefabAisActive = true;
+    [SerializeField]
+    private bool prefabBisActive = true;
+    [SerializeField]
+    private bool prefabCisActive = true;
+
+    private void Update()
     {
-        
+        ButtonCheck();            
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ButtonCheck()
     {
-        if (PlacedObjects > 1)
+       if(prefabAisActive == false)
         {
+            placementButtonA.SetActive(false);
+        }
 
+        if (prefabBisActive == false)
+        {
+            placementButtonB.SetActive(false);
+        }
+
+        if (prefabCisActive == false)
+        {
+            placementButtonC.SetActive(false);
         }
     }
+    public void Prefab1Deactivation()
+    {
+        prefabAisActive = false;
+    }
+    public void Prefab2Deactivation()
+    {
+        prefabBisActive = false;
+    }
+    public void Prefab3Deactivation()
+    {
+        prefabCisActive = false;
+    }
+    public void ReActivate()
+    {
+        prefabAisActive = true;
+        prefabBisActive = true;
+        prefabCisActive = true;
+    }
+
+     
 }
