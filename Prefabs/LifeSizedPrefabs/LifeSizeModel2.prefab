@@ -723,6 +723,7 @@ GameObject:
   - component: {fileID: 5336581339676931195}
   - component: {fileID: 1977422421737680423}
   - component: {fileID: 1611972168270087248}
+  - component: {fileID: 4293907729715967882}
   m_Layer: 0
   m_Name: LifeSizeModel2
   m_TagString: Prefab
@@ -984,6 +985,20 @@ MonoBehaviour:
   m_ARSessionOrigin: {fileID: 0}
   m_RotationRateDegreesDrag: 100
   m_RotationRateDegreesTwist: 2.5
+--- !u!114 &4293907729715967882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6537669402992966895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba670467aa053364ea99acf4b5c2109b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headLights: {fileID: 4602059165597114815}
+  heliBlades: {fileID: 0}
 --- !u!1 &6650883873894149767
 GameObject:
   m_ObjectHideFlags: 0

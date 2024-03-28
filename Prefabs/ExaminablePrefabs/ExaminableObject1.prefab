@@ -485,7 +485,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2053390077069699474}
   - component: {fileID: 4010851026837985660}
-  - component: {fileID: 5291953434932099737}
+  - component: {fileID: 1509220531779750510}
   m_Layer: 0
   m_Name: ExaminableObject1
   m_TagString: Prefab
@@ -561,7 +561,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5291953434932099737}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Examinable, Assembly-CSharp
         m_MethodName: CallManager
         m_Mode: 1
@@ -576,7 +576,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5291953434932099737}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Examinable, Assembly-CSharp
         m_MethodName: StopManager
         m_Mode: 1
@@ -640,7 +640,7 @@ MonoBehaviour:
   m_ExcludeUITouches: 1
   m_ARSessionOrigin: {fileID: 0}
   m_SelectionVisualization: {fileID: 0}
---- !u!114 &5291953434932099737
+--- !u!114 &1509220531779750510
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -649,8 +649,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7760193053391629280}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474b4817d58bf0c459c008f0ac2a2d8d, type: 3}
+  m_Script: {fileID: 11500000, guid: ba670467aa053364ea99acf4b5c2109b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  examinerManager: {fileID: 0}
-  primaryScaleOffset: 1
+  headLights: {fileID: 0}
+  heliBlades: {fileID: 2025866312408394245}
