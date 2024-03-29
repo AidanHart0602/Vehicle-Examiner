@@ -15,6 +15,7 @@ public class EnableAndDisablePlanes : MonoBehaviour
     [SerializeField]
     private TMP_Text TogglePlanesText;
 
+    [System.Obsolete]
     private void Start()
     {
         TogglePlanesText = FindObjectOfType<TextMeshProUGUI>();

@@ -6,11 +6,6 @@ public class SelectedModel: MonoBehaviour
 {
     [SerializeField]
     private PlacementLimiter modelLimiter;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
     public void callDeactivationA()
     {
         modelLimiter.Prefab1Deactivation();
@@ -23,11 +18,5 @@ public class SelectedModel: MonoBehaviour
     public void callDeactivationC()
     {
         modelLimiter.Prefab3Deactivation();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

@@ -757,7 +757,7 @@ MonoBehaviour:
         m_MethodName: set_placementPrefab
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 6537669402992966895, guid: 6ba9175321910f84cab140e2b9d4857e,
+          m_ObjectArgument: {fileID: 6537669402992966895, guid: 2fc041a59ea80e34a83d4b57593876c2,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
@@ -789,9 +789,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 119334319}
-        m_TargetAssemblyTypeName: LimitedModel, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 119334324}
+        m_TargetAssemblyTypeName: SelectedModel, Assembly-CSharp
+        m_MethodName: callDeactivationB
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1955,7 +1955,7 @@ MonoBehaviour:
         m_MethodName: set_placementPrefab
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 8843088395295032586, guid: 9d8006f759357634f967e6271a1176fd,
+          m_ObjectArgument: {fileID: 7760193053391629280, guid: 94ba99ba183341541bc48e70769721d4,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
@@ -2046,10 +2046,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 704411288}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1a72770ec86c134e9afeacbbe4113dd, type: 3}
+  m_Script: {fileID: 11500000, guid: 3881152a7dccecd4e99790a907f4fd1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelLimiter: {fileID: 1165897768}
+  modelLimiter: {fileID: 0}
 --- !u!1 &767927386
 GameObject:
   m_ObjectHideFlags: 0
@@ -2412,7 +2412,7 @@ MonoBehaviour:
         m_MethodName: set_placementPrefab
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 3755139596740005189, guid: b4246e349f5cc8b4d9cae7d3262f2710,
+          m_ObjectArgument: {fileID: 3755139596740005189, guid: fd8c0fde4fe981d43922c3edaca1bd05,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
@@ -3043,7 +3043,7 @@ MonoBehaviour:
         m_MethodName: set_placementPrefab
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 8843088395295032586, guid: 2fb3689ed836ade49bc499efdc8d90dd,
+          m_ObjectArgument: {fileID: 8843088395295032586, guid: c6ae060f25a54084695f14974e32de94,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
@@ -4692,7 +4692,7 @@ MonoBehaviour:
         m_MethodName: set_placementPrefab
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 6537669402992966895, guid: 5b19210436329bc4bb8efc8fd9360623,
+          m_ObjectArgument: {fileID: 6537669402992966895, guid: caf1523d53fd94247943aad2c3070fc6,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
@@ -4712,8 +4712,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1165897766}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1477310932}
-        m_TargetAssemblyTypeName: LimitedModel, Assembly-CSharp
+        m_TargetAssemblyTypeName: SelectedModel, Assembly-CSharp
         m_MethodName: callDeactivationB
         m_Mode: 1
         m_Arguments:
@@ -4771,7 +4783,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1477310927}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1a72770ec86c134e9afeacbbe4113dd, type: 3}
+  m_Script: {fileID: 11500000, guid: 3881152a7dccecd4e99790a907f4fd1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   modelLimiter: {fileID: 1165897768}
@@ -5444,7 +5456,7 @@ MonoBehaviour:
         m_MethodName: set_placementPrefab
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 3755139596740005189, guid: d3c073b1d8ef9684b8f60e9255b88000,
+          m_ObjectArgument: {fileID: 3265653655189819133, guid: 700923868ff0b714db3b1e699a90ef8b,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
@@ -5477,7 +5489,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1845670819}
-        m_TargetAssemblyTypeName: LimitedModel, Assembly-CSharp
+        m_TargetAssemblyTypeName: SelectedModel, Assembly-CSharp
         m_MethodName: callDeactivationC
         m_Mode: 1
         m_Arguments:
@@ -5535,7 +5547,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1845670814}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1a72770ec86c134e9afeacbbe4113dd, type: 3}
+  m_Script: {fileID: 11500000, guid: 3881152a7dccecd4e99790a907f4fd1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   modelLimiter: {fileID: 1165897768}
@@ -5635,9 +5647,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1868084264}
-        m_TargetAssemblyTypeName: UIMenu, Assembly-CSharp
-        m_MethodName: DestroyModels
+      - m_Target: {fileID: 1253266249}
+        m_TargetAssemblyTypeName: PlacementLimiter, Assembly-CSharp
+        m_MethodName: ReActivate
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5647,9 +5659,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1253266249}
-        m_TargetAssemblyTypeName: PlacementLimiter, Assembly-CSharp
-        m_MethodName: ReActivate
+      - m_Target: {fileID: 1868084264}
+        m_TargetAssemblyTypeName: UIMenu, Assembly-CSharp
+        m_MethodName: DestroyModels
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

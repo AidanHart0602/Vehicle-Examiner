@@ -13,6 +13,7 @@ public class GolfCartFunction : MonoBehaviour
         if (lightsEnabled == true)
         {
             headLights.SetActive(true);
+            print("FunctionActivated");
         }
         else
         {
