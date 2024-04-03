@@ -585,7 +585,7 @@ GameObject:
   - component: {fileID: 1137187973809828089}
   - component: {fileID: 2254021286842058545}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Headlight(1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -689,7 +689,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5138079809480683115}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Headlights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -903,7 +903,7 @@ GameObject:
   - component: {fileID: 5466276027357474197}
   - component: {fileID: 4003886658945551678}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Headlight(2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

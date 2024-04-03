@@ -6,27 +6,40 @@ public class ModelActivationScript : MonoBehaviour
 {
     private BomberFunction bombFunc;
     private GolfCartFunction cartFunc;
-    private void Start()
+    private HelicopterFunction heliFunc;
+    [System.Obsolete]
+    public void SearchPrefabs()
     {
-        bombFunc = bombFunc.GetComponent<BomberFunction>();
-        cartFunc = cartFunc.GetComponent<GolfCartFunction>();
+        bombFunc = FindObjectOfType<BomberFunction>();
+        cartFunc = FindObjectOfType<GolfCartFunction>();
+        heliFunc = FindObjectOfType<HelicopterFunction>();
     }
 
     public void ActivateModels()
     {
-        BomberFunction.flamesEnabled = true;
-        bombFunc.ThrusterFlames();
-
-        GolfCartFunction.lightsEnabled = true;
-        cartFunc.HeadLights();
+        if(cartFunc != null)
+        {
+            Debug.Log("Cart Function is not null");
+            cartFunc.EnableHeadlights();
+        }
+        if (bombFunc != null)
+        {
+            Debug.Log("Bomber Function is not null");
+            bombFunc.ActivateThrusterFlames();
+        }
+        if(heliFunc != null)
+        {
+            Debug.Log("Helicopter Function is not null");
+            heliFunc.ActivateBlades();
+        }
     }
 
     public void DeactivateModels()
     {
-        BomberFunction.flamesEnabled = false;
-        bombFunc.ThrusterFlames();
-
-        GolfCartFunction.lightsEnabled = false;
-        cartFunc.HeadLights();
+        cartFunc.DisableHeadLights();
+        bombFunc.DeactivateThrusterFlames();
+        heliFunc.DeactivateBlades();
     }
+
+
 }

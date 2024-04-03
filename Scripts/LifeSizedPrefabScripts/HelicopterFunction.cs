@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class HelicopterFunction : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private GameObject helicopterBlades;
+    private bool activate = false;
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(activate == true)
+        {
+            helicopterBlades.transform.Rotate(0f, 10f, 0f, Space.Self);
+        }
     }
+
+    public void ActivateBlades()
+    {
+        activate = true;
+    }
+
+    public void DeactivateBlades() 
+    {
+        activate = false;
+    }
+
 }

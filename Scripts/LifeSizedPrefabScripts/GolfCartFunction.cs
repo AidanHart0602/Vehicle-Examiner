@@ -6,18 +6,14 @@ public class GolfCartFunction : MonoBehaviour
 {
     [SerializeField]
     private GameObject headLights;
-    static public bool lightsEnabled = false;
-    // Update is called once per frame
-    public void HeadLights()
+
+    public void EnableHeadlights()
     {
-        if (lightsEnabled == true)
-        {
-            headLights.SetActive(true);
-            print("FunctionActivated");
-        }
-        else
-        {
-            headLights.SetActive(false);
-        }
+        Debug.Log("Lights Active");
+        headLights.SetActive(true);
+    }
+    public void DisableHeadLights()
+    { 
+        headLights.SetActive(false);
     }
 }

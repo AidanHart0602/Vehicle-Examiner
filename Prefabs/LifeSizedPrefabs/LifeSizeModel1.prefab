@@ -375,6 +375,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8178592042319150394}
   - component: {fileID: 4684751545068768242}
+  - component: {fileID: 6304462647392938050}
   m_Layer: 0
   m_Name: LifeSizeModel1
   m_TagString: Prefab
@@ -529,3 +530,16 @@ MonoBehaviour:
   m_ExcludeUITouches: 1
   m_ARSessionOrigin: {fileID: 0}
   m_SelectionVisualization: {fileID: 0}
+--- !u!114 &6304462647392938050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8843088395295032586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3669c05d42183df4689ecdfd5cd51ace, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  helicopterBlades: {fileID: 7538183832399222713}
