@@ -48,4 +48,18 @@ public class EnableAndDisablePlanes : MonoBehaviour
             plane.gameObject.SetActive(toggle);
         }
     }
+
+    public void TogglePlaneDetectionWithoutText()
+    {
+        planeManager.enabled = !planeManager.enabled;
+
+        if (planeManager.enabled)
+        {
+            AllPlanesActive(true);
+        }
+        else
+        {
+            AllPlanesActive(false);
+        }
+    }
 }
