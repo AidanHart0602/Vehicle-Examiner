@@ -649,8 +649,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7760193053391629280}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba670467aa053364ea99acf4b5c2109b, type: 3}
+  m_Script: {fileID: 11500000, guid: 474b4817d58bf0c459c008f0ac2a2d8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  headLights: {fileID: 0}
-  heliBlades: {fileID: 2025866312408394245}
+  examinerManager: {fileID: 0}
+  primaryScaleOffset: 1

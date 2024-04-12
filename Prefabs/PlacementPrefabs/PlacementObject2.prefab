@@ -693,6 +693,7 @@ GameObject:
   - component: {fileID: 6912852594737035887}
   - component: {fileID: 32642974577690608}
   - component: {fileID: 6300594209677244563}
+  - component: {fileID: 417816485554535808}
   m_Layer: 0
   m_Name: PlacementObject2
   m_TagString: Prefab
@@ -1153,6 +1154,19 @@ MonoBehaviour:
   m_ARSessionOrigin: {fileID: 0}
   m_RotationRateDegreesDrag: 100
   m_RotationRateDegreesTwist: 2.5
+--- !u!114 &417816485554535808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6537669402992966895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1705450a9738f1a46a953afc929edcb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headLights: {fileID: 7229457978007763869}
 --- !u!1 &7229457978007763869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,7 +1182,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &235775252839180758
 Transform:
   m_ObjectHideFlags: 0

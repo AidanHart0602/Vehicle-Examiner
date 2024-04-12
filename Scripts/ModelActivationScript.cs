@@ -8,16 +8,17 @@ public class ModelActivationScript : MonoBehaviour
     private GolfCartFunction cartFunc;
     private HelicopterFunction heliFunc;
     [System.Obsolete]
-    public void SearchPrefabs()
+    private void SearchPrefabs()
     {
         bombFunc = FindObjectOfType<BomberFunction>();
         cartFunc = FindObjectOfType<GolfCartFunction>();
         heliFunc = FindObjectOfType<HelicopterFunction>();
     }
-
     public void ActivateModels()
     {
-        if(cartFunc != null)
+        SearchPrefabs();
+
+        if (cartFunc != null)
         {
             Debug.Log("Cart Function is not null");
             cartFunc.EnableHeadlights();
@@ -33,13 +34,23 @@ public class ModelActivationScript : MonoBehaviour
             heliFunc.ActivateBlades();
         }
     }
-
     public void DeactivateModels()
     {
-        cartFunc.DisableHeadLights();
-        bombFunc.DeactivateThrusterFlames();
-        heliFunc.DeactivateBlades();
-    }
-
-
+        SearchPrefabs();
+        if (cartFunc != null)
+        {
+            Debug.Log("Cart Function is not null");
+            cartFunc.DisableHeadLights();
+        }
+        if (bombFunc != null)
+        {
+            Debug.Log("Bomber Function is not null");
+            bombFunc.DeactivateThrusterFlames();
+        }
+        if (heliFunc != null)
+        {
+            Debug.Log("Helicopter Function is not null");
+            heliFunc.DeactivateBlades();
+        }
+    }    
 }
