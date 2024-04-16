@@ -489,6 +489,7 @@ GameObject:
   - component: {fileID: 8746069258712446606}
   - component: {fileID: 6625312168697159774}
   - component: {fileID: 9143964924200769703}
+  - component: {fileID: -3203569376612656866}
   m_Layer: 0
   m_Name: PlacementObject1
   m_TagString: Prefab
@@ -563,10 +564,34 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -3203569376612656866}
+        m_TargetAssemblyTypeName: Examinable, Assembly-CSharp
+        m_MethodName: CallManager
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -3203569376612656866}
+        m_TargetAssemblyTypeName: Examinable, Assembly-CSharp
+        m_MethodName: StopManager
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -962,3 +987,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   helicopterBlades: {fileID: 7538183832399222713}
+--- !u!114 &-3203569376612656866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8843088395295032586}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474b4817d58bf0c459c008f0ac2a2d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  examinerManager: {fileID: 0}
+  primaryScaleOffset: 1

@@ -61,4 +61,5 @@ public class ExaminerManager : MonoBehaviour
         selectedPlacementObject = null;
         ExamineActive = false;
     }
+
 }

@@ -7,12 +7,12 @@ public class ModelActivationScript : MonoBehaviour
     private BomberFunction bombFunc;
     private GolfCartFunction cartFunc;
     private HelicopterFunction heliFunc;
-    [System.Obsolete]
+   
     private void SearchPrefabs()
     {
-        bombFunc = FindObjectOfType<BomberFunction>();
-        cartFunc = FindObjectOfType<GolfCartFunction>();
-        heliFunc = FindObjectOfType<HelicopterFunction>();
+        bombFunc = Object.FindFirstObjectByType<BomberFunction>();
+        cartFunc = Object.FindFirstObjectByType<GolfCartFunction>();
+        heliFunc = Object.FindFirstObjectByType<HelicopterFunction>();
     }
     public void ActivateModels()
     {

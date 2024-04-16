@@ -3,14 +3,14 @@ using UnityEngine;
 public class Examinable : MonoBehaviour
 { 
     [SerializeField]
-    private ExaminerManager examinerManager;
+    public ExaminerManager examinerManager;
     [SerializeField]
     public float primaryScaleOffset = 1f;
 
     // Start is called before the first frame update
 
     [System.Obsolete]
-    void Start()
+    public void FindManager()
     {
         examinerManager = FindObjectOfType<ExaminerManager>();
     }
@@ -29,5 +29,10 @@ public class Examinable : MonoBehaviour
     {
         examinerManager.TurnOffManager();
         print("Turning the examiner off");
+    }
+    
+    public void DisableManager()
+    {
+        examinerManager = null;
     }
 }

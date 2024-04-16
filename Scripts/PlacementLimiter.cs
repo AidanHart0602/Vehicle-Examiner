@@ -9,7 +9,7 @@ public class PlacementLimiter : MonoBehaviour
     public GameObject placementButtonA;
     public GameObject placementButtonB;
     public GameObject placementButtonC;
-
+    public GameObject selectionButton;
     [SerializeField]
     private bool prefabAisActive = true;
     [SerializeField]
@@ -47,6 +47,11 @@ public class PlacementLimiter : MonoBehaviour
         else
         {
             placementButtonC.SetActive(true);
+        }
+
+        if(prefabAisActive && prefabBisActive && prefabCisActive == false)
+        {
+            selectionButton.SetActive(false);
         }
     }
     public void Prefab1Deactivation()
