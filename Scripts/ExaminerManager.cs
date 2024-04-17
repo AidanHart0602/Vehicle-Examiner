@@ -33,7 +33,7 @@ public class ExaminerManager : MonoBehaviour
                 
                 if(touch.phase == TouchPhase.Moved)
                 {
-                    selectedPlacementObject.transform.Rotate(touch.deltaPosition.x * RotationSpeed, touch.deltaPosition.y * RotationSpeed, 0);
+                    selectedPlacementObject.transform.Rotate(touch.deltaPosition.y * RotationSpeed, touch.deltaPosition.x * RotationSpeed, 0);
                 }
             }
         }

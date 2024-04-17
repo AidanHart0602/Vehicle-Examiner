@@ -1,7 +1,12 @@
 using UnityEngine;
-
+using UnityEngine.XR.Interaction.Toolkit.AR;
 public class Examinable : MonoBehaviour
-{ 
+{
+    [SerializeField]
+    public ARSelectionInteractable examinableSelection;
+    [SerializeField]
+    public ARSelectionInteractable regularSelection;
+   
     [SerializeField]
     public ExaminerManager examinerManager;
     [SerializeField]
@@ -12,13 +17,15 @@ public class Examinable : MonoBehaviour
     [System.Obsolete]
     public void FindManager()
     {
+        examinableSelection.enabled = true;
+        regularSelection.enabled = false;
         examinerManager = FindObjectOfType<ExaminerManager>();
     }
-
-    // Update is called once per frames
-    void Update()
+    public void DisableManager()
     {
-
+        examinableSelection.enabled = false;
+        regularSelection.enabled = true;
+        examinerManager = null;
     }
     public void CallManager()
     {
@@ -27,12 +34,10 @@ public class Examinable : MonoBehaviour
     }
     public void StopManager()
     {
+
         examinerManager.TurnOffManager();
         print("Turning the examiner off");
     }
     
-    public void DisableManager()
-    {
-        examinerManager = null;
-    }
+
 }

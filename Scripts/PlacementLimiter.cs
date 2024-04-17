@@ -19,7 +19,7 @@ public class PlacementLimiter : MonoBehaviour
 
     private void Update()
     {
-        ButtonCheck();            
+        ButtonCheck();
     }
 
     public void ButtonCheck()
@@ -49,7 +49,7 @@ public class PlacementLimiter : MonoBehaviour
             placementButtonC.SetActive(true);
         }
 
-        if(prefabAisActive && prefabBisActive && prefabCisActive == false)
+        if(prefabAisActive == false && prefabBisActive == false && prefabCisActive == false)
         {
             selectionButton.SetActive(false);
         }

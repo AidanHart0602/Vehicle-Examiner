@@ -9,6 +9,7 @@ public class UIMenu : MonoBehaviour
     private Examinable examinable;
     private void Start()
     {
+
     }
     private void Update()
     {
