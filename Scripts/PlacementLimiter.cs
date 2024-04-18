@@ -19,7 +19,10 @@ public class PlacementLimiter : MonoBehaviour
 
     private void Update()
     {
-        ButtonCheck();
+        if (prefabAisActive == false && prefabBisActive == false && prefabCisActive == false)
+        {
+            selectionButton.SetActive(false);
+        }
     }
 
     public void ButtonCheck()
@@ -48,11 +51,6 @@ public class PlacementLimiter : MonoBehaviour
         {
             placementButtonC.SetActive(true);
         }
-
-        if(prefabAisActive == false && prefabBisActive == false && prefabCisActive == false)
-        {
-            selectionButton.SetActive(false);
-        }
     }
     public void Prefab1Deactivation()
     {
@@ -75,6 +73,10 @@ public class PlacementLimiter : MonoBehaviour
     }
     public void ReActivate()
     {
+        placementButtonA.SetActive(false);
+        placementButtonB.SetActive(false);
+        placementButtonC.SetActive(false);
+        selectionButton.SetActive(true);
         prefabAisActive = true;
         prefabBisActive = true;
         prefabCisActive = true;
