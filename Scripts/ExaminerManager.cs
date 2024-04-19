@@ -12,7 +12,7 @@ public class ExaminerManager : MonoBehaviour
     private Vector3 cachedScale;
 
     [SerializeField]
-    private float RotationSpeed = 1f;
+    private float RotationSpeed = .25f;
     private bool ExamineActive = false;
 
     // Start is called before the first frame update
@@ -26,16 +26,17 @@ public class ExaminerManager : MonoBehaviour
     {
         if (Input.touchCount > 0)
         {
-            print("Touch has been Detected");
-            if(ExamineActive == true)
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Moved)
             {
-                Touch touch = Input.GetTouch(0);
                 
-                if(touch.phase == TouchPhase.Moved)
+                if (ExamineActive == true)
                 {
-                    selectedPlacementObject.transform.Rotate(touch.deltaPosition.y * RotationSpeed, touch.deltaPosition.x * RotationSpeed, 0);
+                    selectedPlacementObject.transform.Rotate(touch.deltaPosition.y * RotationSpeed, touch.deltaPosition.x * -1 * RotationSpeed, 0);
                 }
             }
+            print("Touch has been Detected");
+            
         }
     }
 
